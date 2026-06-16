@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="DevForge — A team of 6 passionate student developers building modern digital experiences, web applications, and innovative solutions." />
+  <meta name="keywords" content="software agency, student developers, web development, portfolio, team" />
+  <meta name="author" content="DevForge Team" />
+  <meta property="og:title" content="DevForge — Building Modern Digital Experiences" />
+  <meta property="og:description" content="We are a team of passionate developers creating innovative web applications and digital solutions." />
+  <meta property="og:type" content="website" />
+  <title>DevForge — Building Modern Digital Experiences</title>
+
+  <!-- Favicon (inline SVG data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237c3aed'/><text x='50%' y='60%' dominant-baseline='middle' text-anchor='middle' font-size='18' font-weight='bold' fill='white'>D</text></svg>" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./css/variables.css" />
+  <link rel="stylesheet" href="./css/animations.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════════ -->
+  <header role="banner">
+    <nav id="navbar" class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="nav-container">
+
+        <!-- Logo -->
+        <a href="#home" class="nav-logo" aria-label="DevForge — go to home">
+          <div class="logo-icon" aria-hidden="true">D</div>
+          <span class="logo-text">Dev<span>Forge</span></span>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links" role="list">
+          <li><a href="#home"     class="nav-link" data-section="home"     aria-current="page">Home</a></li>
+          <li><a href="#about"    class="nav-link" data-section="about">About</a></li>
+          <li><a href="#team"     class="nav-link" data-section="team">Team</a></li>
+          <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+          <li><a href="#contact"  class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+
+        <!-- Actions -->
+        <div class="nav-actions">
+          <button id="theme-toggle-desktop" class="theme-toggle" aria-label="Toggle theme" title="Toggle dark/light mode">
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+            <span class="icon-sun"  aria-hidden="true">☀️</span>
+          </button>
+          <button id="nav-hamburger" class="nav-hamburger" aria-label="Open mobile menu" aria-expanded="false" aria-controls="nav-drawer">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Mobile Backdrop -->
+    <div id="nav-backdrop" class="nav-drawer-backdrop" role="presentation"></div>
+
+    <!-- Mobile Drawer -->
+    <nav id="nav-drawer" class="nav-drawer" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#home"     class="nav-link" data-section="home">🏠 Home</a></li>
+        <li><a href="#about"    class="nav-link" data-section="about">ℹ️ About</a></li>
+        <li><a href="#team"     class="nav-link" data-section="team">👥 Team</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">💼 Projects</a></li>
+        <li><a href="#contact"  class="nav-link" data-section="contact">✉️ Contact</a></li>
+      </ul>
+      <div style="margin-top:auto;padding-top:2rem;">
+        <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Toggle theme" style="width:100%;border-radius:12px;gap:8px;padding:12px;">
+          <span class="icon-moon" aria-hidden="true">🌙</span>
+          <span class="icon-sun"  aria-hidden="true">☀️</span>
+          <span style="font-size:0.875rem;font-weight:600;">Toggle Theme</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ═══════════════════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════════════════ -->
+    <section id="home" class="hero" aria-label="Hero section">
+
+      <!-- Background orbs -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+      </div>
+
+      <!-- Floating shapes -->
+      <div class="hero-shapes" aria-hidden="true">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-grid">
+
+          <!-- Content -->
+          <div class="hero-content">
+            <div class="hero-badge" aria-label="Team of 6 developers">
+              <span class="hero-badge-dot" aria-hidden="true"></span>
+              6 Passionate Developers
+            </div>
+
+            <h1 class="hero-title">
+              <span class="title-line">Building Modern</span>
+              <span class="title-line typing-wrapper">
+                <span id="typing-text" class="typing-text" aria-live="polite"></span><span class="typing-cursor" aria-hidden="true"></span>
+              </span>
+            </h1>
+
+            <p class="hero-desc">
+              We are a team of passionate developers creating innovative web applications and digital solutions that push the boundaries of what's possible.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#team" class="btn btn-primary btn-ripple" aria-label="Meet the team">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Meet The Team
+              </a>
+              <a href="#projects" class="btn btn-outline btn-ripple" aria-label="Explore our projects">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                Explore Projects
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="hero-visual" role="img" aria-label="Team photo of DevForge developers">
+            <div class="hero-image-wrapper">
+              <img
+                src="./assets/images/team-group.jpg"
+                alt="The DevForge team — 6 developers smiling in a modern tech office"
+                class="hero-img"
+                width="600"
+                height="480"
+                fetchpriority="high"
+                onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&q=80'"
+              />
+            </div>
+
+            <!-- Floating stat cards -->
+            <div class="hero-stat-card card-tl" aria-label="6 team members">
+              <div class="hero-stat-value">6</div>
+              <div class="hero-stat-label">Team Members</div>
+            </div>
+            <div class="hero-stat-card card-br" aria-label="12 plus projects">
+              <div class="hero-stat-value">12+</div>
+              <div class="hero-stat-label">Projects Built</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll</span>
+      </div>
+
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         ABOUT SECTION
+    ═══════════════════════════════════════════════════════ -->
+    <section id="about" class="about section" aria-labelledby="about-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <div class="section-badge">⚡ Who We Are</div>
+          <h2 class="section-title" id="about-title">About Our <span class="gradient-text">Agency</span></h2>
+          <p class="section-desc">A collective of six driven student developers united by a passion for clean code, modern design, and impactful digital solutions.</p>
+        </header>
+
+        <div class="about-grid">
+
+          <!-- Text column -->
+          <div class="about-text-col">
+            <p class="about-lead reveal">
+              DevForge was born from a shared belief: that great software starts with great collaboration. We combine diverse skills — from pixel-perfect design to robust back-end architecture — to ship products that make a real difference.
+            </p>
+
+            <!-- Mission / Vision tabs -->
+            <div class="mv-tabs reveal" role="tablist" aria-label="Mission and Vision">
+              <button class="mv-tab active" role="tab" aria-selected="true"  data-tab="mission" id="tab-mission" aria-controls="mv-mission">🎯 Mission</button>
+              <button class="mv-tab"        role="tab" aria-selected="false" data-tab="vision"  id="tab-vision"  aria-controls="mv-vision">🔭 Vision</button>
+              <button class="mv-tab"        role="tab" aria-selected="false" data-tab="values"  id="tab-values"  aria-controls="mv-values">💎 Values</button>
+            </div>
+
+            <div id="mv-mission" class="mv-panel active reveal" role="tabpanel" aria-labelledby="tab-mission">
+              Our mission is to deliver exceptional digital experiences by combining technical excellence with creative thinking. We strive to turn complex ideas into elegant, performant web solutions that genuinely serve users.
+            </div>
+            <div id="mv-vision" class="mv-panel reveal" role="tabpanel" aria-labelledby="tab-vision">
+              We envision a future where every developer on our team leads with confidence. By building real-world projects, mastering modern tools, and collaborating openly, we aim to become a benchmark for student-led software agencies.
+            </div>
+            <div id="mv-values" class="mv-panel reveal" role="tabpanel" aria-labelledby="tab-values">
+              We believe in radical transparency, relentless learning, and shipping work we're genuinely proud of. Every line of code, every design decision is made with care for the end user. Quality over shortcuts, always.
+            </div>
+
+            <!-- Core value cards -->
+            <div class="values-grid stagger-children" style="margin-top:2rem;">
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">🤝</div>
+                <div class="value-title">Collaboration</div>
+                <div class="value-desc">Great software is built together, not alone.</div>
+              </div>
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">✨</div>
+                <div class="value-title">Quality First</div>
+                <div class="value-desc">We ship code we're proud to put our names on.</div>
+              </div>
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">📚</div>
+                <div class="value-title">Always Learning</div>
+                <div class="value-desc">Staying curious keeps our skills sharp and fresh.</div>
+              </div>
+              <div class="value-card">
+                <div class="value-icon" aria-hidden="true">🚀</div>
+                <div class="value-title">Ship It</div>
+                <div class="value-desc">We deliver real products, not just ideas.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tech stack column -->
+          <div class="about-tech-col reveal reveal-left">
+            <h3 class="tech-stack-title">Our Tech Stack</h3>
+            <div class="tech-cards-grid stagger-children" aria-label="Technologies we use">
+
+              <div class="tech-card reveal">
+                <div class="tech-icon" aria-label="HTML5">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo" width="48" height="48" loading="lazy" />
+                </div>
+                <span class="tech-name">HTML5</span>
+                <div class="tech-level" role="progressbar" aria-label="HTML5 skill level: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                  <div class="tech-level-fill" style="width:95%"></div>
+                </div>
+              </div>
+
+              <div class="tech-card reveal">
+                <div class="tech-icon" aria-label="CSS3">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo" width="48" height="48" loading="lazy" />
+                </div>
+                <span class="tech-name">CSS3</span>
+                <div class="tech-level" role="progressbar" aria-label="CSS3 skill level: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  <div class="tech-level-fill" style="width:90%"></div>
+                </div>
+              </div>
+
+              <div class="tech-card reveal">
+                <div class="tech-icon" aria-label="JavaScript">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" width="48" height="48" loading="lazy" />
+                </div>
+                <span class="tech-name">JavaScript</span>
+                <div class="tech-level" role="progressbar" aria-label="JavaScript skill level: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                  <div class="tech-level-fill" style="width:88%"></div>
+                </div>
+              </div>
+
+              <div class="tech-card reveal">
+                <div class="tech-icon" aria-label="Git">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" width="48" height="48" loading="lazy" />
+                </div>
+                <span class="tech-name">Git</span>
+                <div class="tech-level" role="progressbar" aria-label="Git skill level: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  <div class="tech-level-fill" style="width:85%"></div>
+                </div>
+              </div>
+
+              <div class="tech-card reveal">
+                <div class="tech-icon" aria-label="GitHub">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" width="48" height="48" loading="lazy" style="filter:invert(var(--gh-icon-invert,1))" />
+                </div>
+                <span class="tech-name">GitHub</span>
+                <div class="tech-level" role="progressbar" aria-label="GitHub skill level: 87%" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100">
+                  <div class="tech-level-fill" style="width:87%"></div>
+                </div>
+              </div>
+
+              <div class="tech-card reveal">
+                <div class="tech-icon" aria-label="Node.js">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js logo" width="48" height="48" loading="lazy" />
+                </div>
+                <span class="tech-name">Node.js</span>
+                <div class="tech-level" role="progressbar" aria-label="Node.js skill level: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  <div class="tech-level-fill" style="width:75%"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         TEAM SECTION
+    ═══════════════════════════════════════════════════════ -->
+    <section id="team" class="team section" aria-labelledby="team-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <div class="section-badge">👥 Our People</div>
+          <h2 class="section-title" id="team-title">Meet The <span class="gradient-text">Team</span></h2>
+          <p class="section-desc">Six passionate developers, one shared mission — to build digital products that stand out.</p>
+        </header>
+
+        <!-- Team cards rendered by team.js -->
+        <div id="team-grid" class="team-grid stagger-children" role="list" aria-label="Team members"></div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         PROJECTS SECTION
+    ═══════════════════════════════════════════════════════ -->
+    <section id="projects" class="projects section" aria-labelledby="projects-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <div class="section-badge">💼 Our Work</div>
+          <h2 class="section-title" id="projects-title">Project <span class="gradient-text">Showcase</span></h2>
+          <p class="section-desc">Real-world applications built with care, creativity, and modern web technologies.</p>
+        </header>
+
+        <!-- Filters -->
+        <div class="project-filters reveal" role="group" aria-label="Filter projects by status">
+          <button class="filter-btn active btn-ripple" data-filter="all"         aria-pressed="true">All Projects</button>
+          <button class="filter-btn btn-ripple"         data-filter="completed"   aria-pressed="false">✅ Completed</button>
+          <button class="filter-btn btn-ripple"         data-filter="in-progress" aria-pressed="false">🔄 In Progress</button>
+        </div>
+
+        <!-- Project cards rendered by projects.js -->
+        <div id="projects-grid" class="projects-grid" role="list" aria-label="Project cards"></div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         STATISTICS SECTION
+    ═══════════════════════════════════════════════════════ -->
+    <section id="stats" class="stats section" aria-labelledby="stats-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <div class="section-badge">📊 By The Numbers</div>
+          <h2 class="section-title" id="stats-title">Our <span class="gradient-text">Impact</span></h2>
+          <p class="section-desc">Milestones that reflect our growth, dedication, and passion for building.</p>
+        </header>
+
+        <!-- Stat cards rendered by app.js initCounters() -->
+        <div id="stats-grid" class="stats-grid" role="list" aria-label="Statistics"></div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════
+         CONTACT SECTION
+    ═══════════════════════════════════════════════════════ -->
+    <section id="contact" class="contact section" aria-labelledby="contact-title">
+      <div class="container">
+
+        <header class="section-header reveal">
+          <div class="section-badge">✉️ Get In Touch</div>
+          <h2 class="section-title" id="contact-title">Contact <span class="gradient-text">Us</span></h2>
+          <p class="section-desc">Have a project in mind or just want to say hello? We'd love to hear from you.</p>
+        </header>
+
+        <div class="contact-grid">
+
+          <!-- Contact info -->
+          <div class="contact-info reveal reveal-right">
+            <h3 class="contact-info-title">Let's Build Something Amazing Together</h3>
+            <p class="contact-info-desc">
+              Whether you're looking for a passionate dev team for your next project or you just want to connect — our inbox is always open. We typically respond within 24 hours.
+            </p>
+
+            <div class="contact-links" role="list">
+              <a href="mailto:hello@devforge.dev" class="contact-link-item" aria-label="Email us at hello@devforge.dev" role="listitem">
+                <div class="contact-link-icon" aria-hidden="true">📧</div>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">Email</div>
+                  <div class="contact-link-value">hello@devforge.dev</div>
+                </div>
+              </a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link-item" aria-label="Visit our GitHub" role="listitem">
+                <div class="contact-link-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">GitHub</div>
+                  <div class="contact-link-value">github.com/devforge</div>
+                </div>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-link-item" aria-label="Visit our LinkedIn" role="listitem">
+                <div class="contact-link-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </div>
+                <div class="contact-link-text">
+                  <div class="contact-link-label">LinkedIn</div>
+                  <div class="contact-link-value">linkedin.com/company/devforge</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact form -->
+          <div class="reveal">
+            <div class="contact-form-card">
+              <form id="contact-form" novalidate aria-label="Contact form">
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="contact-name" class="form-label">
+                      Full Name <span class="required" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="text"
+                      id="contact-name"
+                      name="name"
+                      class="form-input"
+                      placeholder="John Doe"
+                      autocomplete="name"
+                      required
+                      aria-required="true"
+                      aria-describedby="contact-name-error"
+                    />
+                    <span id="contact-name-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="contact-email" class="form-label">
+                      Email Address <span class="required" aria-hidden="true">*</span>
+                    </label>
+                    <input
+                      type="email"
+                      id="contact-email"
+                      name="email"
+                      class="form-input"
+                      placeholder="john@example.com"
+                      autocomplete="email"
+                      required
+                      aria-required="true"
+                      aria-describedby="contact-email-error"
+                    />
+                    <span id="contact-email-error" class="form-error" role="alert" aria-live="polite"></span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject" class="form-label">
+                    Subject <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="contact-subject"
+                    name="subject"
+                    class="form-input"
+                    placeholder="Project Collaboration"
+                    required
+                    aria-required="true"
+                    aria-describedby="contact-subject-error"
+                  />
+                  <span id="contact-subject-error" class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message" class="form-label">
+                    Message <span class="required" aria-hidden="true">*</span>
+                  </label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-textarea"
+                    rows="5"
+                    placeholder="Tell us about your project or idea..."
+                    required
+                    aria-required="true"
+                    aria-describedby="contact-message-error"
+                  ></textarea>
+                  <span id="contact-message-error" class="form-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-primary btn-submit btn-ripple" aria-label="Send message">
+                  <span class="btn-text">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                    Send Message
+                  </span>
+                  <span class="btn-loader" aria-hidden="true"></span>
+                </button>
+
+                <div class="form-success-msg" id="form-success" role="status" aria-live="polite">
+                  <span aria-hidden="true">✅</span>
+                  Message sent! We'll get back to you within 24 hours.
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo" aria-label="Site footer">
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon" aria-hidden="true">D</div>
+            <span class="logo-text">Dev<span>Forge</span></span>
+          </div>
+          <p class="footer-desc">
+            A team of 6 passionate student developers building modern digital experiences, one commit at a time.
+          </p>
+          <div class="footer-socials" aria-label="Follow us on social media">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="footer-social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:hello@devforge.dev" class="footer-social-btn" aria-label="Email us">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <nav class="footer-col" aria-label="Quick links">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="#home"     class="footer-link">🏠 Home</a></li>
+            <li><a href="#about"    class="footer-link">ℹ️ About</a></li>
+            <li><a href="#team"     class="footer-link">👥 Team</a></li>
+            <li><a href="#projects" class="footer-link">💼 Projects</a></li>
+            <li><a href="#contact"  class="footer-link">✉️ Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- GitHub links -->
+        <nav class="footer-col" aria-label="GitHub repositories">
+          <h3 class="footer-col-title">GitHub</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://github.com/" target="_blank" rel="noopener" class="footer-link">📦 Organisation</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener" class="footer-link">🚀 Portfolio Repo</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener" class="footer-link">🧠 Quiz App</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener" class="footer-link">📋 Kanban Board</a></li>
+          </ul>
+        </nav>
+
+        <!-- Team links -->
+        <nav class="footer-col" aria-label="Team member profiles">
+          <h3 class="footer-col-title">Team</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer-link">👤 Arjun Sharma</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer-link">👤 Priya Nair</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer-link">👤 Kevin Zhang</a></li>
+            <li><a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer-link">👤 Amara Williams</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          © <span id="footer-year"></span> <span>DevForge</span>. Built with ❤️ by 6 passionate developers.
+        </p>
+        <a href="#home" id="footer-back-top" class="back-to-top" aria-label="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+          Back to Top
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FAB Back-to-top -->
+  <button id="back-to-top-fab" class="back-to-top-fab" aria-label="Scroll back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JavaScript — loaded in dependency order as plain scripts (no ES modules) -->
+  <script src="./js/theme.js"></script>
+  <script src="./js/team.js"></script>
+  <script src="./js/projects.js"></script>
+  <script src="./js/validation.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+</html>
