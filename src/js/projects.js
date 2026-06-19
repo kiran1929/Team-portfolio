@@ -32,7 +32,7 @@ var projects = [
     tech: ['JavaScript', 'Chart.js', 'LocalStorage'],
     status: 'completed',
     statusLabel: 'Completed',
-    link: '#https://suryanjali-pandey.github.io/Smart-Expense-Tracker/'
+    link: 'https://suryanjali-pandey.github.io/Smart-Expense-Tracker/'
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ var projects = [
     tech: ['JavaScript', 'Fetch API', 'Service Workers'],
     status: 'in-progress',
     statusLabel: 'In Progress',
-    link: '#https://live-news-feed-nine.vercel.app/'
+    link: 'https://live-news-feed-nine.vercel.app/'
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ var projects = [
     tech: ['GitHub API', 'JavaScript', 'CSS Grid'],
     status: 'in-progress',
     statusLabel: 'In Progress',
-    link: '#https://dipanjanmaity890.github.io/GitHub-Developer-Explorer/'
+    link: 'https://dipanjanmaity890.github.io/GitHub-Developer-Explorer/'
   },
   {
     id: 6,
@@ -62,7 +62,7 @@ var projects = [
     tech: ['JavaScript', 'Drag & Drop API', 'CSS3'],
     status: 'completed',
     statusLabel: 'Completed',
-    link: '#https://kanban-task-board-navy.vercel.app/'
+    link: 'https://kanban-task-board-navy.vercel.app/'
   }
 ];
 
