@@ -1,5 +1,7 @@
-// Dark / Light Mode Toggle with localStorage Persistence
-
+/**
+ * theme.js — Dark / Light Mode Toggle with localStorage Persistence
+ * Loaded as a standard script (no ES module syntax)
+ */
 
 var ThemeManager = (function () {
   var STORAGE_KEY = 'theme';
@@ -10,17 +12,8 @@ var ThemeManager = (function () {
     document.documentElement.setAttribute('data-theme', theme);
     localStorage.setItem(STORAGE_KEY, theme);
     var toggles = document.querySelectorAll('.theme-toggle');
-
-    
     toggles.forEach(function (btn) {
-      let mode;
-
-      if (theme === DARK) 
-        mode = 'light';
-       else 
-        mode = 'dark';
-     // btn.setAttribute('aria-label', 'Switch to ' + (theme === DARK ? 'light' : 'dark') + ' mode');
-      btn.setAttribute('aria-label', 'Switch to ' + mode + ' mode');
+      btn.setAttribute('aria-label', 'Switch to ' + (theme === DARK ? 'light' : 'dark') + ' mode');
     });
   }
 
