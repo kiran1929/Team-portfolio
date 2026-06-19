@@ -22,7 +22,7 @@ var projects = [
     tech: ['JavaScript', 'CSS3', 'LocalStorage'],
     status: 'completed',
     statusLabel: 'Completed',
-    link: '#https://xdxnick.github.io/Quizz-App/'
+    link: 'https://xdxnick.github.io/Quizz-App/'
   },
   {
     id: 3,
